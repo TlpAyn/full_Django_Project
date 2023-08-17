@@ -20,8 +20,17 @@ def course_details(request, category_slug, course_id):
     }
     return render (request, 'course.html', context)
 
-def category_details(request, category_slug):
+def category_list(request, category_slug):
     courses = Course.objects.all().filter(category__slug = category_slug)
+
+    context = {
+        'courses': courses
+    }
+    return render (request, 'courses.html', context)
+
+def tag_list(request, tag_slug):
+    courses = Course.objects.all().filter(tags__slug = tag_slug)
+    categories = Category.objects.all()
 
     context = {
         'courses': courses
