@@ -4,6 +4,6 @@ from teachers.views import TeacherListView
 
 urlpatterns = [
     
-    path('', TeacherListView.as_view, name="teachers"),
+    path('', TeacherListView.as_view(), name="teachers"),
 
 ]
