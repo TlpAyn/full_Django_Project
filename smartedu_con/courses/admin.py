@@ -18,4 +18,4 @@ class CategoryAdmin(admin.ModelAdmin):
 @admin.register(Tag)
 class CategoryAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('name',)}
-    
+
