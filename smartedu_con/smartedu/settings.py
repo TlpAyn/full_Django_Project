@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'pages.apps.PagesConfig',
     'courses.apps.CoursesConfig',
     'teachers.apps.TeachersConfig',
+    'freecod.apps.FreecodConfig',
+    
 ]
 
 MIDDLEWARE = [
